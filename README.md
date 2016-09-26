@@ -1,5 +1,13 @@
-# meteor-tic-tac-toe
+# Meteor Tic Tac Toe
 Repo for Meteor TicTacToe deliverable
+
+##To Start
+Create your meteor app in this directory by running the following commands:
+```bash
+meteor create .
+meteor npm install
+meteor
+```
 
 ---
 

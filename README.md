@@ -1,3 +1,4 @@
+Jeremy Wallace
 # Meteor Tic Tac Toe
 Repo for Meteor TicTacToe deliverable
 

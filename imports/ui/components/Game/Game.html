@@ -1,0 +1,21 @@
+<template name="Game">
+  {{#each row in board}}
+    <div id="row{{@index}}" class="row">
+      {{#each cell in row}}
+        <div class="col-xs-4">
+          <div id="space{{@index}}" class="well board-space" style="cursor:pointer;">{{cell}}</div>
+        </div>
+      {{/each}}
+    </div>
+  {{/each}}
+  <div class="row">
+    <div class="col-xs-8">
+      <button class="btn btn-warning reset-btn">Reset Game</button>
+    </div>
+    <div class="col-xs-4">
+      <label class="checkbox-inline">
+        <input type="checkbox" class="toggle-single-player" value="option1"> Single Player
+      </label>
+    </div>
+  </div>
+</template>

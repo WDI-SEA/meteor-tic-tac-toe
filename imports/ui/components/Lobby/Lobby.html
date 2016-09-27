@@ -1,0 +1,11 @@
+<template name="Lobby">
+  <div class="well lobby" style="cursor:pointer;" data-target="#{{_id}}" data-toggle="collapse">
+    <button class="delete pull-right btn btn-danger glyphicon glyphicon-remove"></button>
+    <h3>{{title}} - <small>{{createdAt}}</small></h3>
+  </div>
+  <div class="game collapse" id="{{_id}}">
+    {{#with game}}
+      {{> Game}}
+    {{/with}}
+  </div>
+</template>

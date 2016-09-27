@@ -1,1 +1,4 @@
 /* CSS declarations go here */
+.board-space {
+  text-align: center;
+}

@@ -14,7 +14,6 @@ Template.body.events({
 
     if (count == 0) {
       count = 1;
-      event.target.className = 'square x';
       // Player.insert({
       //   player: 'x',
       //   id
@@ -22,7 +21,7 @@ Template.body.events({
       console.log(count);
     } else {
       count = 0;
-      event.target.className = 'square o';
+      event.target.className = 'col-md-4 square o';
       // Player.insert({
       //   player: 'x',
       //   id

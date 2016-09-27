@@ -1,6 +1,6 @@
 import { Template } from 'meteor/templating';
 
-import { Images } from '../../api/images.js'
+import { Player } from '../../api/player.js'
 
 import './body.html';
 
@@ -10,13 +10,28 @@ Template.body.events({
   'click .square'(event){
     event.preventDefault();
 
-    const target = event.target;
+    const id = event.target.id;
+
     if (count == 0) {
-      target.className = 'square x';
       count = 1;
+      event.target.className = 'square x';
+      // Player.insert({
+      //   player: 'x',
+      //   id
+      // });
+      console.log(count);
     } else {
-      target.className = 'square o';
       count = 0;
+      event.target.className = 'square o';
+      // Player.insert({
+      //   player: 'x',
+      //   id
+      // });
+      console.log(count);
     }
   }
 })
+
+function checkWinner(){
+
+}

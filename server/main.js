@@ -1,1 +1,1 @@
-import '../imports/api/images.js'
+import '../imports/api/player.js'

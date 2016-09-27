@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: white;
+}
+.square {
+  height: 300px;
+  width: 300px;
+  background-color: grey;
+  border: 1px solid white;
+}
+.x {
+  background-image: url('https://mises.org/sites/default/files/23158392405_d3e3b60cb8_o.jpg');
+  background-size: cover;
+}
+.o {
+  background-image: url('http://www.zerohedge.com/sites/default/files/images/user230519/imageroot/Trump_0.jpg');
+  background-size: cover;
+}
+.well {
+  color: white;
+  background-color: darkgrey;
+}

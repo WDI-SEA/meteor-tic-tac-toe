@@ -14,6 +14,7 @@ Template.body.events({
 
     if (count == 0) {
       count = 1;
+      event.target.className = 'col-md-4 square x';
       // Player.insert({
       //   player: 'x',
       //   id

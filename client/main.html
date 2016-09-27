@@ -1,25 +1,47 @@
 <head>
   <title>meteor-tic-tac-toe</title>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+<div class="container">
+  <header>
+    <h1>Tic Tac Toe</h1>
+  </header>
 
-  {{> hello}}
-  {{> info}}
+</div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
+<template name="task">
+  <section>
+    <div id='comment'>x's move</div>
+    <br><br>
+    <label>Players:</label>
+    <select name="players" id="players">
+      <option value="2" checked="checked">2</option>
+      <option value="1">1</option>
+      <br>
+    </select>
+  </section>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+  <section>
+    <div class='row'>
+      <div class='square' id='1'>&nbsp;</div>
+      <div class='square' id='2'>&nbsp;</div>
+      <div class='square' id='3'>&nbsp;</div>
+    </div>
+    <div class='row'>
+      <div class='square' id='4'>&nbsp;</div>
+      <div class='square' id='5'>&nbsp;</div>
+      <div class='square' id='6'>&nbsp;</div>
+    </div>
+    <div class='row'>
+      <div class='square' id='7'>&nbsp;</div>
+      <div class='square' id='8'>&nbsp;</div>
+      <div class='square' id='9'>&nbsp;</div>
+    </div>
+  </section>
+
+  <button id='clear'>Reset</button>
 </template>

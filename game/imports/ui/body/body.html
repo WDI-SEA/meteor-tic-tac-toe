@@ -1,0 +1,22 @@
+<body>
+  <h1>tictactoe</h1>
+  {{> gameboard}}
+</body>
+
+<template name="gameboard">
+  {{#if hasWon}}
+    <h2 class="winner">And the winner is... <strong>{{winner}}</strong>!</h2>
+  {{else}}
+    <h2 class="current">It is <strong>{{player}}</strong> turn!</h2>
+  {{/if}}
+  <div class="gameboard">
+    {{#each boxes}}
+      {{> box}}
+    {{/each}}
+  </div>
+  <button class="reset-game" type="button">Reset game</button>
+</template>
+
+<template name="box">
+  <div class="box">{{player}}</div>
+</template>
